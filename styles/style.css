@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gravitas+One&family=Imperial+Script&display=swap");
+
+::-moz-selection {
+  color: var(--black);
+  background: var(--blue);
+}
+::selection {
+  color: var(--black);
+  background: var(--yellow2);
+}
+:root {
+  --black: #3b3e43;
+  --black2: #3f4550;
+  --white: #eef1ef;
+  --red: #e3511b;
+  --yellow: #fcd12a;
+  --yellow2: #eedc91;
+  --blue: #c6d8e2;
+  --blue2: #8a9cab;
+  --accentBlue: #917ea9;
+}
+* {
+  vertical-align: top;
+  box-sizing: border-box;
+  color: var(--white);
+
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: var(--black);
+  font-family: "Gravitas One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav {
+  padding: 1% 0;
+  position: sticky;
+  top: 0;
+  background: var(--blue);
+  opacity: 0.9;
+  z-index: 10;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 2%;
+}
+nav ul li {
+  list-style-type: none;
+  margin: 0 3%;
+}
+nav ul li a {
+  color: var(--blue2);
+  font-size: 1.2em;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 1s;
+}
+nav ul li a:hover {
+  color: var(--black);
+  text-decoration: underline;
+  letter-spacing: 1px;
+  transition: all 1s;
+}
+nav a i {
+  font-size: 1.2em;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin: 10% 5% 0% 5%;
+}
+header section h1 {
+  font-size: 4em;
+}
+.apellido-diaz {
+  display: inline-flex;
+  align-items: baseline;
+  margin-left: 20px;
+}
+.letra-d {
+  font-family: "Imperial Script", cursive;
+  font-weight: 200;
+  font-size: 3em;
+  vertical-align: middle;
+  line-height: 1;
+  margin: 0 5% 0 55%;
+}
+.letras-resto {
+  font-size: 1.2em;
+  vertical-align: middle;
+  line-height: 1;
+}
+header img{
+  z-index: -1;
+  position: relative;
+  bottom: 55%;
+  left: 75%;
+  transform: rotate(10deg);
+}
+#model img{
+  width: 40%;
+  bottom: 10%;
+  left: 50%;
+  transform: rotate(0deg);
+}
+hr{
+  width: 90%;
+  margin: 0 auto 5%;
+}
+
+.arrow-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+.arrow {
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 25px solid var(--blue);
+  animation: bounce 1.5s infinite; 
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(10px);
+  }
+  60% {
+    transform: translateY(5px);
+  }
+}
+
+
+main{
+  background-color: var(--black2);
+}
+#sobremi{
+  width: 90%;
+  margin: 10% auto;
+}
+#sobremi h1{
+  font-size: 3em;
+  color: var(--blue);
+}
+#sobremi h1 i{
+  color: var(--yellow2);
+}
+.subrayado{
+  color: var(--yellow2);
+}
+#datos{
+  display: flex;
+  justify-content: space-between;
+}
+#habilidades{
+  display: flex;
+  margin: 5% 0;
+}
+#habilidades h3{
+  color: var(--blue);
+}
+#habilidades ul li{
+  margin: 2% 10%;
+  font-size: small;
+}
+#habilidades article{
+  margin-right: 25%;
+}
+#datosPersonales{
+  margin-left: 20%;
+  margin-top: 2%;
+}
+#datosPersonales h2{
+  margin: 2% 0%;
+}
+#datosPersonales h2 span{
+  font-size: medium;
+  
+  vertical-align: middle;
+  line-height: 1;
+}
+#datosPersonales p{
+  width: 70%;
+}
+
+
+#redes ul{
+  list-style: none;
+}
+#redes ul li{
+  font-size: 2.5em;
+  margin: 50% 0;
+}
+#redes ul li a i{
+  transition: all 0.5s;
+}
+#redes ul li a i:hover{
+  color: var(--yellow2);
+  transition: all 0.5s;
+}
+
+
+#contacto{
+  background-color: var(--blue);
+  padding: 3%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+}
+#contacto h1 {
+  text-align: center;
+  color: var(--black2);
+}
+form label {
+  margin-top: 3%;
+  color: var(--black2);
+}
+form input,
+form textarea {
+  padding: 2%;
+  margin-top: 1%;
+  border: 2px solid var(--blue2);
+  width: 100%;
+  border-radius: 2vh 10vh;
+  color: var(--white);
+  font-weight: 600;
+  background-color: var(--blue2);
+}
+form button {
+  margin-top: 4%;
+  padding: 2%;
+  width: fit-content;
+  float: right;
+  background-color: var(--black2);
+  color: var(--white);
+  font-weight: 900;
+  border-radius: 15px 5px;
+  border: none;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: all 0.5s;
+}
+form button:hover {
+  background-color: var(--blue2);
+  transition: all 0.5s;
+  box-shadow: 4px 4px 0px var(--black2);
+}
+#contacto i{
+  color: var(--black2);
+  animation: animation 4s infinite alternate-reverse;
+}
+@keyframes animation{
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  background: var(--black2);
+}
+footer p {
+  color: var(--blue2);
+  opacity: 0.5;
+}

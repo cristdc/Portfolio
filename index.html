@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Mi portafolio web." />
+    <script
+      src="https://kit.fontawesome.com/7115f6f010.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="img/starIcon.gif" type="image/gif" />
+    <title>Cristina Díaz Cabello</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body id="home">
+    <nav>
+      <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#sm">SOBRE MÍ</a></li>
+        <li><a href="#proyectos">PROYECTOS</a></li>
+        <li><a href="#contacto">CONTACTO</a></li>
+        <a href="#"><i class="fa-solid fa-bars"></i></a>
+      </ul>
+    </nav>
+
+    <header >
+      <section>
+        <h1>Cristina</h1>
+        <h1>
+          <span class="apellido-diaz"
+            ><span class="letra-d">D</span
+            ><span class="letras-resto">íaz</span></span
+          >
+        </h1>
+        <img src="./img/galaxy.png" alt="img" />
+      </section>
+
+      <section id="model">
+        <img src="./img/star4.png" alt="star4" />
+      </section>
+    </header>
+
+    <div class="arrow-container">
+      <div class="arrow"></div>
+    </div>
+
+    <main id="sm">
+      <hr />
+      <section id="sobremi">
+        <h1>Sobre mi <i class="fa-solid fa-star"></i></h1>
+
+        <section id="datos">
+          <section id="habilidades">
+            <article>
+              <h3>Desarrollo <span class="subrayado">Frontend</span></h3>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Bootstrap</li>
+                <li>JavaScript</li>
+              </ul>
+            </article>
+            <article>
+              <h3>Desarrollo <span class="subrayado">Backend</span></h3>
+              <ul>
+                <li>SQL</li>
+                <li>Java</li>
+                <li>Kotlin</li>
+                <li>PHP</li>
+              </ul>
+            </article>
+          </section>
+
+          <section id="datosPersonales">
+            <h2>Email: <span>cristdc05@gmail.com</span></h2>
+            <p>Soy estudiante de Desarrollo de Aplicaciones Multiplataforma (DAM) con una sólida base en Desarrollo de Aplicaciones Web (DAW). Me apasiona diseñar y construir soluciones eficientes y versátiles, tanto para entornos móviles como web.</p>
+          </section>
+
+          <section id="redes">
+            <ul>
+              <li>
+                <a href="https://github.com/cristdc" target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://cults3d.com/@ch3se"
+                  ><i class="fa-solid fa-cube"></i
+                ></a>
+              </li>
+            </ul>
+          </section>
+        </section>
+      </section>
+
+      <section id="contacto">
+        <h1>Contacto <i class="fa-solid fa-star"></i></h1>
+        <form id="contact-form">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Cristina. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="javascript/jsForm.js"></script>
+  </body>
+</html>
